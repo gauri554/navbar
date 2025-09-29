@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Inbound() {
   return (
-    <div className="w-full md:w-[700] bg-white text-gray-800 px-8 py-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-      {/* ---------- Left Section: India: A Timeless Experience ---------- */}
+    <div className="w-full lg:w-[700] bg-white text-gray-800 px-8 py-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Left Section */}
       <div>
         <h2 className="text-lg font-semibold mb-4">India: A Timeless Experience</h2>
         <div className="grid grid-cols-2 gap-4">
@@ -22,7 +22,7 @@ export default function Inbound() {
             <p className="text-xs text-gray-500">Beyond The Forts</p>
           </div>
 
-          {/* Card 2 */}
+       
           <div className="flex flex-col">
             <Image
               src="/inbound-2.webp"
@@ -35,7 +35,7 @@ export default function Inbound() {
             <p className="text-xs text-gray-500">Roars & Royals</p>
           </div>
 
-          {/* Card 3 */}
+   
           <div className="flex flex-col">
             <Image
               src="/inbound-3.avif"
@@ -48,7 +48,7 @@ export default function Inbound() {
             <p className="text-xs text-gray-500">The Triangle of Royalty</p>
           </div>
 
-          {/* Card 4 */}
+      
           <div className="flex flex-col">
             <Image
               src="/inbound-4.avif"
@@ -63,7 +63,7 @@ export default function Inbound() {
         </div>
       </div>
 
-      {/* ---------- Middle Section: Explore Niche Experiences ---------- */}
+     
       <div>
         <h2 className="text-lg font-semibold mb-4">Explore Niche Experiences</h2>
         <div className="flex flex-col space-y-4">
@@ -90,7 +90,7 @@ export default function Inbound() {
         </div>
       </div>
 
-      {/* ---------- Right Section: Maharaja’s Express & Others ---------- */}
+  
     
       <div className="flex flex-col space-y-4 md:pt-18">
         {[

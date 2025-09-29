@@ -31,54 +31,19 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full md:w-full relative">
+    <header className="w-full relative">
       {/* ---------- Top Row ---------- */}
       <div className="bg-[#0c1b2a] text-white flex items-center justify-between 
-                      px-4 sm:px-6 lg:px-26 h-16">
+                      px-4 sm:px-6 md:px-6 lg:px-12 xl:px-26 h-18">
+   
+       
+       
         {/* Logo + Search (desktop/tablet inline) */}
-        <div className="flex items-center gap-4 sm:gap-6 flex-shrink-0">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/veena-world-logo.svg"
-              alt="Veena World logo"
-              width={140}
-              height={40}
-              priority
-            />
-          </Link>
-
-          {/* Search hides on small screens */}
-          <div className="hidden md:flex items-center w-[260px] lg:w-[320px] bg-white rounded-full px-4 py-1">
-            <FiSearch className="text-gray-500 mr-2" />
-            <input
-              type="text"
-              placeholder='Search "Cherry Blossom"'
-              className="w-full bg-transparent outline-none text-black placeholder-gray-400 text-sm"
-            />
-          </div>
-        </div>
-
-        {/* Right side */}
-        <div className="flex items-center space-x-4 sm:space-x-6 text-sm">
-          <Link href="#" className="text-yellow-400 hover:underline hidden md:inline xs:inline">
-            Travel Planner 2025
-          </Link>
-
-          <div className="hidden sm:flex items-center bg-blue-700 hover:bg-blue-800 rounded-full px-3 sm:px-4 py-1 cursor-pointer">
-            <FiPhone className="mr-1" />
-            <span className="font-semibold whitespace-nowrap">
-              1800&nbsp;313&nbsp;5555
-            </span>
-          </div>
-
-          <Link href="#" className="hidden sm:flex items-center hover:text-yellow-400">
-            <FiUser className="mr-1" />
-            Sign In
-          </Link>
-
-          {/* Mobile hamburger */}
+        <div className="flex items-center gap-2 sm:gap-6 md:gap-6 flex-shrink-0">
+        
+          {/* Mobile Humberger */}  
         <button
-  className="md:hidden flex flex-col justify-center space-y-1 relative z-50"
+  className="lg:hidden flex flex-col justify-center space-y-1 relative z-50"
   onClick={() => setOpen(!open)}
   aria-label="Toggle menu"
 >
@@ -98,12 +63,65 @@ export default function Navbar() {
     }`}
   />
 </button>
+       
+        
+        
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/veena-world-logo.svg"
+              alt="Veena World logo"
+              width={155}
+              height={45}
+              priority
+              className="hidden lg:block h-auto"
+            />
+
+             <Image
+    src="/veena-world-small-logo.svg"
+    alt="Veena World mobile logo"
+    width={34}
+    height={10}
+    priority
+    className="block lg:hidden h-[15]"
+  />
+          </Link>
+
+          {/* Search hides on small screens */}
+          <div className="hidden lg:flex items-center w-[260px] lg:w-[320px] bg-white rounded-full px-4 py-1">
+            <FiSearch className="text-gray-500 mr-2" />
+            <input
+              type="text"
+              placeholder='Search "Cherry Blossom"'
+              className="w-full bg-transparent outline-none text-black placeholder-gray-400 text-sm"
+            />
+          </div>
+        </div>
+
+        {/* Right side */}
+        <div className="flex items-center space-x-4 sm:space-x-6 text-[6px] md:text-xs lg:text-sm">
+          <Link href="#" className="text-yellow-400 underline font-bold  md:inline xs:inline">
+            Travel Planner 2025
+          </Link>
+
+          <div className=" flex flex-row sm:flex items-center bg-blue-700 hover:bg-blue-800 rounded-full px-3 sm:px-4 py-1 cursor-pointer">
+            <FiPhone className="mr-1" />
+            <span className="font-semibold whitespace-nowrap">
+              1800&nbsp;313&nbsp;5555
+            </span>
+          </div>
+
+          <Link href="#" className="hidden sm:flex items-center hover:text-yellow-400">
+            <FiUser className="mr-1" />
+            Sign In
+          </Link>
+
+        
 
         </div>
       </div>
 
       {/* Mobile search below top row */}
-      <div className="md:hidden bg-[#0c1b2a] px-4 pb-2">
+      <div className="lg:hidden bg-[#0c1b2a] px-4 md:px-6 pb-2">
         <div className="flex items-center bg-white rounded-full px-4 py-1">
           <FiSearch className="text-gray-500 mr-2" />
           <input
@@ -114,12 +132,12 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ---------- Bottom Menu ---------- */}
+      {/* Bottom Row */}
       <nav
-        className={`bg-[#10263e] text-white font-medium text-sm transition-all
+        className={`bg-[#10263e] text-white font-bold text-sm md;text-sm lg:text-sm transition-all
           ${open ? "block" : "hidden"} md:block`}   onMouseLeave={() => setIndiaOpen(false)}
       >
-        <ul className="hidden md:flex flex-col md:flex-row md:justify-center md:space-x-8 px-4 md:px-0 py-2 md:py-1">
+        <ul className="hidden lg:flex flex-col lg:flex-row lg:justify-center  lg-space-x-5 xl:space-x-4 px-4 lg:px-4 py-2 lg:py-1">
         {menu.map((m) => (
   <li key={m.name} className="relative">
   {m.name === "India" ? (
@@ -193,7 +211,7 @@ export default function Navbar() {
       </div>
     </>
   ) : m.name === "Customized Holidays" ? (
-    // --- SPECIALITY TOURS MENU ---
+    // --- CUSTOMIZED MENU ---
     <>
       <div
         onMouseEnter={() => setCustomizedOpen(true)}
@@ -215,7 +233,7 @@ export default function Navbar() {
       </div>
     </>
   ) : m.name === "Inbound" ? (
-    // --- SPECIALITY TOURS MENU ---
+    // --- INBOUND MENU ---
     <>
       <div
         onMouseEnter={() => setInboundOpen(true)}
@@ -261,7 +279,7 @@ export default function Navbar() {
   ) 
   : (
     // --- NORMAL LINK ---
-    <Link href="#" className="hover:text-yellow-400 px-2 ">
+    <Link href="#" className="hover:text-yellow-400 px-2  ">
       {m.name}
     </Link>
   )}
@@ -270,11 +288,11 @@ export default function Navbar() {
   ))}
         </ul>
 
-      <div className={`${open ? "block" : "hidden"} md:hidden border-t border-gray-800`}>
+      <div className={`${open ? "block" : "hidden"} lg:hidden border-t border-gray-800`}>
   <ul className="flex flex-col px-4 py-3 space-y-2">
     {menu.map((m) => (
       <li key={m.name}>
-        {/* If menu item has mega dropdown */}
+     
         {m.name === "India" ? (
           <>
             <button

@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function SpecialityTours() {
   return (
     <div
-      className=" left-0 top-full mt-2 w-full md:w-[800] max-h-[500px] bg-white shadow-lg border border-gray-200 py-6 px-6 overflow-y-auto z-50"
+      className=" left-0 top-full mt-2 w-full lg:w-[800] max-h-[500px] bg-white shadow-lg border border-gray-200 py-6 px-6 overflow-y-auto z-50"
     >
-      {/* -------- BESTSELLING TOURS -------- */}
+  
       <section className="mb-8">
         <h2 className="text-lg font-semibold text-gray-800 mb-4 uppercase tracking-wide">
           BESTSELLING TOURS
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           <Link
             href="#"
             className="block bg-white rounded-lg overflow-hidden shadow hover:shadow-md transition"
@@ -88,11 +88,11 @@ export default function SpecialityTours() {
               <p className="text-xs text-blue-600 mt-1">110 Departures →</p>
             </div>
           </Link>
-          {/* other cards... */}
+     
         </div>
       </section>
 
-      {/* -------- SOMETHING NEW TO TRY -------- */}
+  
       <section className="mb-8">
         <h2 className="text-lg font-semibold text-gray-800 mb-4 uppercase tracking-wide">
           SOMETHING NEW TO TRY
@@ -112,14 +112,14 @@ export default function SpecialityTours() {
             >
               <span className="text-gray-800 font-medium">{item.title}</span>
               {item.dep && (
-                <span className="text-xs text-gray-500">{`(${item.dep})`}</span>
+                <span className="text-xs text-gray-500">{`(${item.dep})`}</span>  
               )}
             </Link>
           ))}
         </div>
 
-        {/* Newly Launched Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+ 
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">
           
           {[
             "Women's Special with Kids",
@@ -145,7 +145,7 @@ export default function SpecialityTours() {
         </div>
       </section>
 
-      {/* -------- DEPARTURES TO LAUNCH SOON -------- */}
+    
       <section>
         <h2 className="text-lg font-semibold text-gray-800 mb-4 uppercase tracking-wide">
           Departures to launch soon

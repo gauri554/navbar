@@ -45,7 +45,7 @@ const [openAccordion, setOpenAccordion] = useState<string | null>(null);
           <ul className="flex flex-wrap lg:flex-col lg:space-y-1 gap-x-4 gap-y-1 ml-1 text-[10px] md:text-sm font-normal">
             {["Alexandria", "Aswan", "Cairo", "Hurghada", "Luxor", "Nile Cruise"].map((city) => (
               <li key={city}>
-                <Link href="#" className="hover:text-blue-600 text-sm">{city}</Link>
+                <Link href="#" className="hover:text-blue-600 ">{city}</Link>
               </li>
             ))}
           </ul>
@@ -53,13 +53,13 @@ const [openAccordion, setOpenAccordion] = useState<string | null>(null);
           <h4 className="text-sm font-semibold mt-4">Kenya</h4>
           <div className="w-12 h-[1px] bg-gray-200 my-2" />
           <ul className=" flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
-            <li><Link href="#" className="hover:text-blue-600 text-sm">Masai Mara</Link></li>
+            <li><Link href="#" className="hover:text-blue-600">Masai Mara</Link></li>
           </ul>
 
           <h4 className="text-sm font-semibold mt-4">Mauritius</h4>
           <div className="w-12 h-[1px] bg-gray-200 my-2" />
           <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
-            <li><Link href="#" className="hover:text-blue-600 text-sm">Port Louis</Link></li>
+            <li><Link href="#" className="hover:text-blue-600 ">Port Louis</Link></li>
           </ul>
 
           <h4 className="text-sm font-semibold mt-4">Seychelles</h4>
@@ -83,7 +83,7 @@ const [openAccordion, setOpenAccordion] = useState<string | null>(null);
               "Sun City",
             ].map((place) => (
               <li key={place}>
-                <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+                <Link href="#" className="hover:text-blue-600">{place}</Link>
               </li>
             ))}
           </ul>
@@ -99,7 +99,7 @@ const [openAccordion, setOpenAccordion] = useState<string | null>(null);
           <h4 className="text-xs md:text-sm font-semibold">Zimbabwe</h4>
           <div className="w-12 h-[1px] bg-gray-200 my-2" />
           <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
-            <li><Link href="#" className="hover:text-blue-600 text-sm">Victoria Falls</Link></li>
+            <li><Link href="#" className="hover:text-blue-600">Victoria Falls</Link></li>
           </ul>
         </div>
       </>
@@ -123,7 +123,7 @@ America: (
         <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
           {["Rio De Janerio"].map((place) => (
             <li key={place}>
-              <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+              <Link href="#" className="hover:text-blue-600">{place}</Link>
             </li>
           ))}
         </ul>
@@ -141,7 +141,7 @@ America: (
             "Vanciuver"
           ].map((city) => (
             <li key={city}>
-              <Link href="#" className="hover:text-blue-600 text-sm">{city}</Link>
+              <Link href="#" className="hover:text-blue-600">{city}</Link>
             </li>
           ))}
         </ul>
@@ -164,7 +164,7 @@ America: (
            "Washington",
           ].map((place) => (
             <li key={place}>
-              <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+              <Link href="#" className="hover:text-blue-600">{place}</Link>
             </li>
           ))}
         </ul>
@@ -194,7 +194,7 @@ America: (
     <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
       {["Chitwan", "Kathmandu", "Pokhara"].map((city) => (
         <li key={city}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{city}</Link>
+          <Link href="#" className="hover:text-blue-600">{city}</Link>
         </li>
       ))}
     </ul>
@@ -204,7 +204,7 @@ America: (
     <ul className="flex flex-wrap lg:flex-col lg:space-y-1 gap-x-4 gap-y-1 ml-1 text-[10px] md:text-sm font-normal">
       {["Bentota", "Colombo", "Galle", "Kandy", "Nuwara Eliya"].map((city) => (
         <li key={city}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{city}</Link>
+          <Link href="#" className="hover:text-blue-600">{city}</Link>
         </li>
       ))}
     </ul>
@@ -221,7 +221,7 @@ America: (
     <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 md:ml-1 text-[10px] md:text-sm font-normal">
       {["Kuala Lumpur", "Genting Highlands", "Langkawi"].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -231,7 +231,7 @@ America: (
     <ul className="flex flex-wrap lg:flex-col lg:space-y-1 gap-x-4 gap-y-1 ml-1 text-[10px] md:text-sm font-normal">
       {["Bali", "Kuta", "Nusa Penida", "Ubud"].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -244,7 +244,7 @@ America: (
     <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
       {["Beijing", "Shanghai", "Shenzhen"].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -259,7 +259,7 @@ America: (
     <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
       {["Hanoi", "Ho Chi Minh"].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -272,7 +272,7 @@ America: (
     <ul className="flex flex-wrap lg:flex-col lg:space-y-1 gap-x-4 gap-y-1 ml-1 text-[10px] md:text-sm font-normal">
       {["Bangkok", "Krabi", "Pattaya", "Phuket"].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600 ">{place}</Link>
         </li>
       ))}
     </ul>
@@ -282,7 +282,7 @@ America: (
     <ul className="flex flex-wrap lg:flex-col lg:space-y-1 gap-x-4 gap-y-1 ml-1 text-[10px] md:text-sm font-normal">
       {["Cherry Blossom Tours", "Hiroshima", "Kyoto", "Osaka", "Tokyo"].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600 ">{place}</Link>
         </li>
       ))}
     </ul>
@@ -293,7 +293,7 @@ America: (
     <h4 className="text-xs md:text-sm font-semibold">South Korea</h4>
     <div className="w-12 h-[1px] bg-gray-200 my-2" />
     <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
-      <li><Link href="#" className="hover:text-blue-600 text-sm">Seoul</Link></li>
+      <li><Link href="#" className="hover:text-blue-600">Seoul</Link></li>
     </ul>
 
     <h4 className="text-sm font-semibold mt-4">Philippines</h4>
@@ -324,7 +324,7 @@ America: (
       "Queensland",
     ].map((place) => (
       <li key={place}>
-        <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+        <Link href="#" className="hover:text-blue-600">{place}</Link>
       </li>
     ))}
   </ul>
@@ -342,7 +342,7 @@ America: (
   <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
     {["Auckland", "Christchurch", "Rotorua"].map((place) => (
       <li key={place}>
-        <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+        <Link href="#" className="hover:text-blue-600">{place}</Link>
       </li>
     ))}
   </ul>
@@ -380,7 +380,7 @@ America: (
         "Vatican city",
       ].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -401,7 +401,7 @@ America: (
         "Slovakia",
       ].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -419,7 +419,7 @@ America: (
         "Russia",
       ].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -444,7 +444,7 @@ America: (
         "Kazakhstan",
       ].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600">{place}</Link>
         </li>
       ))}
     </ul>
@@ -454,7 +454,7 @@ America: (
     <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
       {["Midnight Sun", "Northern Lights", "Scandinavia"].map((place) => (
         <li key={place}>
-          <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+          <Link href="#" className="hover:text-blue-600 ">{place}</Link>
         </li>
       ))}
     </ul>
@@ -476,13 +476,13 @@ America: (
   <h4 className="text-sm font-semibold mt-4">Jordan</h4>
   <div className="w-12 h-[1px] bg-gray-200 my-2" />
   <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
-    <li><Link href="#" className="hover:text-blue-600 text-sm">Petra</Link></li>
+    <li><Link href="#" className="hover:text-blue-600">Petra</Link></li>
   </ul>
 
   <h4 className="text-sm font-semibold mt-4">Oman</h4>
   <div className="w-12 h-[1px] bg-gray-200 my-2" />
   <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
-    <li><Link href="#" className="hover:text-blue-600 text-sm">Muscat</Link></li>
+    <li><Link href="#" className="hover:text-blue-600">Muscat</Link></li>
   </ul>
 
   <h4 className="text-sm font-semibold mt-4">United Arab Emirates</h4>
@@ -490,7 +490,7 @@ America: (
   <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
     {["Abu Dhabi", "Dubai", "Ferrari World"].map((place) => (
       <li key={place}>
-        <Link href="#" className="hover:text-blue-600 text-sm">{place}</Link>
+        <Link href="#" className="hover:text-blue-600">{place}</Link>
       </li>
     ))}
   </ul>
@@ -500,7 +500,7 @@ America: (
   <h4 className="text-sm font-semibold mt-4">Qatar</h4>
   <div className="w-12 h-[1px] bg-gray-200 my-2" />
   <ul className="flex flex-wrap gap-x-4 gap-y-2 ml-1 text-[10px] md:text-sm font-normal">
-    <li><Link href="#" className="hover:text-blue-600 text-sm">Doha</Link></li>
+    <li><Link href="#" className="hover:text-blue-600">Doha</Link></li>
   </ul>
 </div>
 </>

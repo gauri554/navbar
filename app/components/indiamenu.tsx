@@ -60,13 +60,13 @@ const [openAccordion, setOpenAccordion] = useState<string | null>(null);
             <h4 className="text-xs md:text-sm font-semibold mt-4">Himachal Pradesh</h4>
             <div className="w-8 h-[1px] bg-gray-200 my-2" />
             <ul className="flex flex-wrap lg:flex-col lg:space-y-1 gap-x-4 gap-y-2 md:ml-1 text-[10px] md:text-sm font-normal">
-              <li><Link href="#" className="text-[12px] md:text-sm hover:text-blue-600">Chandrataal</Link></li>
+              <li><Link href="#" className=" hover:text-blue-600">Chandrataal</Link></li>
               <li><Link href="#" className="hover:text-blue-600">Dalhousie</Link></li>
-              <li><Link href="#" className="text-[12px] md:text-sm hover:text-blue-600">Dharamshala</Link></li>
+              <li><Link href="#" className=" hover:text-blue-600">Dharamshala</Link></li>
               <li><Link href="#" className="hover:text-blue-600">Kaza</Link></li>
               <li><Link href="#" className="hover:text-blue-600">Manali</Link></li>
               <li><Link href="#" className="hover:text-blue-600">Shimla</Link></li>
-              <li><Link href="#" className="text-[12px] md:text-sm hover:text-blue-600">Spiti Valley</Link></li>
+              <li><Link href="#" className=" hover:text-blue-600">Spiti Valley</Link></li>
             </ul>
           </div>
         </div>
